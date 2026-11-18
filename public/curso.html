@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nexo: cursos para avanzar, a cualquier edad. Explora los cursos e inscríbete para aprender a tu ritmo.">
+  <meta name="referrer" content="same-origin">
+  <title>Información del curso | Nexo</title>
+  <link rel="icon" href="assets/img/placeholder.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="course">
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="site-header" id="header">
+    <a class="brand" href="index.html" aria-label="Nexo, inicio"><span class="brand-mark" aria-hidden="true">N</span><span>nexo</span></a>
+    <nav class="site-nav" aria-label="Navegación principal"><a href="cursos.html">Cursos</a><a href="nosotros.html">Quiénes somos</a><a href="como-aprenderas.html">Cómo aprenderás</a><a class="pill" href="login.html">Login</a></nav>
+  </header>
+  <main class="container" id="main" tabindex="-1">
+    <div id="global-message" class="global-message" role="status" aria-live="polite"></div>
+    <div id="page"><p class="loading" role="status">Cargando…</p></div>
+    <noscript><p>Activa JavaScript para consultar cursos y gestionar tus inscripciones.</p></noscript>
+  </main>
+  <footer class="site-footer"><span>Nexo · Aprender no termina al graduarse.</span><div class="footer-links"><a data-route="courses" href="cursos.html">Cursos</a><a data-route="about" href="nosotros.html">Contacto</a></div></footer>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <dialog id="withdraw-dialog" aria-labelledby="withdraw-title">
+    <h2 id="withdraw-title">¿Dar de baja este curso?</h2><p id="withdraw-description"></p>
+    <p>Dejarás de tener acceso al contenido. La inscripción se conservará en tu historial.</p>
+    <div id="withdraw-message" class="form-message" role="alert"></div>
+    <div class="button-row"><button class="btn btn-secondary" id="cancel-withdraw" type="button">Cancelar</button><button class="btn btn-danger" id="confirm-withdraw" type="button">Confirmar baja</button></div>
+  </dialog>
+</body>
+</html>

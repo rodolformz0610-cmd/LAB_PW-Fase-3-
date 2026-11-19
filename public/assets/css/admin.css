@@ -1,0 +1,33 @@
+/* Panel de administración de Nexo. Complementa styles.css; no lo sustituye. */
+.admin-list{display:grid;gap:25px}
+.admin-card{display:flex;align-items:center;justify-content:space-between;gap:18px;border-radius:var(--radius);box-shadow:var(--shadow);background:#fff;padding:30px 34px;border:1px solid #fafafa}
+.admin-card h2{font-size:16px;font-weight:700;margin:0}.admin-card .muted{font-size:12px;margin:4px 0 0}
+.admin-card.has-image{padding:0;overflow:hidden;min-height:96px}.admin-card.has-image .course-img{width:120px;height:96px}
+.admin-card .grow{flex:1;min-width:0}.admin-card .actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:flex-end}
+.admin-card.has-image .grow{padding:14px 0}.admin-card.has-image .actions{padding-right:22px}
+.admin-panel{border-radius:var(--radius);box-shadow:var(--shadow);background:#fff;padding:26px 30px;border:1px solid #fafafa;margin-bottom:28px}
+.admin-panel-head{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:22px}
+.admin-panel-head h2{margin:0;font-size:18px}
+.field textarea{width:100%;border:1px solid #dedee4;border-radius:4px;background:#fff;padding:9px 11px;color:var(--ink);font:inherit;font-size:14px;min-height:110px;resize:vertical}
+.field textarea:focus{outline:2px solid #b97aff;outline-offset:2px}
+.form-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.form-grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.inline-check{display:flex;align-items:center;gap:9px;font-size:13px;margin:4px 0 17px}.inline-check input{width:17px;height:17px;accent-color:var(--purple-dark)}
+.toolbar-admin{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:24px}
+.period{display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap;margin-bottom:26px}.period .field{margin:0;min-width:160px}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:28px}
+.metric{border-radius:var(--radius);box-shadow:var(--shadow);background:#fff;padding:24px 26px;border:1px solid #fafafa}
+.metric h2{font-size:16px;font-weight:700;margin:0 0 3px}.metric .sub{font-size:11px;color:var(--purple-dark);margin:0 0 18px}
+.metric .big{font-size:56px;line-height:1.1;font-weight:300;letter-spacing:-1.5px;margin:0}.metric .unit{font-size:13px;color:var(--muted);margin:4px 0 0}
+.money-row{display:flex;align-items:center;gap:18px;justify-content:space-between;border-radius:var(--radius);box-shadow:var(--shadow);background:#fff;padding:18px 24px;border:1px solid #fafafa;margin-bottom:16px;flex-wrap:wrap}
+.money-row .grow{flex:1;min-width:200px}.money-row h3{margin:0;font-size:15px}.money-row .muted{font-size:11px;margin:2px 0 0}
+.money-row .amount{font-size:20px;font-weight:600;min-width:150px;text-align:right}
+.badge.in{background:#efe7ff}.badge.out{background:#fdeede;color:#8a4b12}.badge.total{background:#eee;color:#444}.badge.off{background:#f6e3e3;color:#8c2f31}
+.section-title{font-size:19px;font-weight:400;margin:30px 0 16px}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+.data-table{width:100%;border-collapse:collapse;font-size:13px}.data-table th,.data-table td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.data-table th{background:var(--wash);font-weight:600;font-size:12px;color:#424650}.data-table td.num,.data-table th.num{text-align:right;white-space:nowrap}.data-table tr:last-child td{border-bottom:0}
+.net-line{display:flex;justify-content:space-between;gap:16px;padding:16px 24px;background:var(--wash);border-radius:14px;font-weight:600;margin-top:6px}
+dialog.wide{width:640px}dialog form .button-row{margin-top:20px}
+@media(max-width:850px){.metric-grid{grid-template-columns:1fr}.form-grid-3,.form-grid-4{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.admin-card{padding:22px 20px;flex-wrap:wrap}.admin-card.has-image{display:grid;grid-template-columns:90px 1fr}.admin-card.has-image .course-img{width:90px;height:100%;grid-row:1 / span 2}.admin-card.has-image .actions{grid-column:2;padding:0 12px 14px 0;justify-content:flex-start}.form-grid-3,.form-grid-4{grid-template-columns:1fr}.metric .big{font-size:46px}.money-row .amount{text-align:left}.admin-panel{padding:20px}}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
